@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Печатные платы">
+    <title>Smart Device</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Condensed:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="build/css/style.min.css" rel="preload" as="style">
+    <link href="build/css/style.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="logo">
+          <img class="logo__image" src="build/images/circuit.svg" alt="logo circuit board" width="52" height="52">
+          <div class="logo__text">Smart Device <span>умные технологии</span></div>
+        </div>
+        <nav class="menu">
+        </nav>
+        <address class="contacts">
+          <a class="contacts__email" href="mailto:info@sd.ru">
+            <img class="contacts__image contacts__image--email" src="build/images/envelope.svg" alt="email" width="19" height="14">
+            <span class="contacts__email-text">info@sd.ru</span>
+          </a>
+          <a class="contacts__tel" href="tel:+74950005252">
+            <img class="contacts__image contacts__image--tel" src="build/images/envelope.svg" alt="tel" width="18" height="18">
+            <span class="contacts__tel-text">+7 (495) 000 52 52</span>
+          </a>
+          <a class="contacts__reguest-call" href="#popup">Заказать звонок</a>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="presentation">
+        <h1>Печатные платы</h1>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a href="#popup">Получить бесплатную консультацию</a>
+        <span>Скролл вниз</span>
+      </section>
+      <section class="features">
+        <article class="features__item">
+          <h2 class="features__title">Оперативные сроки</h2>
+          <img class="features__img" src="build/images/stopwatch.svg" alt="stopwatch" width="29.5" height="35.5">
+          <p class="features__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
+        </article>
+        <article class="features__item">
+          <h2 class="features__title">Крупные поставщики</h2>
+          <img class="features__img" src="build/images/hired.svg" alt="hired" width="35.5" height="35.5">
+          <p class="features__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+        </article>
+        <article class="features__item">
+          <h2 class="features__title">Полная конфиденциальность</h2>
+          <img class="features__img" src="build/images/detective.svg" alt="detective" width="36.5" height="31.5">
+          <p class="features__text">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+        </article>
+        <article class="features__item">
+          <h2 class="features__title">Персонализация стоимости</h2>
+          <img class="features__img" src="build/images/tag.svg" alt="tag" width="35.5" height="35.5">
+          <p class="features__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+        </article>
+      </section>
+      <section class="detail">
+        <img class="detail__image" src="build/images/2005.png" alt="2005" with="317" height="220">
+        <div class="detail__container">
+          <h2 class="detail__title">О компании</h2>
+          <div class="detail__description">
+            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          </div>
+          <button class="detail__more-detail" type="button">Подробнее</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <form class="send-contacts" name="send-contacts" action="#" method="post">
+      <div class="send-contacts__positioner">
+        <h2 class="send-contacts__title">Закажи звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <input type="text" name="you-name" value="" placeholder="Имя" required>
+        <input type="tel" name="you-phone" value="" placeholder="Телефон" required>
+        <textarea name="you-question" required>Ваш вопрос</textarea>
+        <button type="submit">Отправить</button>
+        <label><input type="checkbox" name="personal-data" checked>Я согласен на обработку  персональных данных</label>
+      <div>
+    </form>
+    <!-- <script src="build/js/script.min.js"></script> -->
+  </body>
+</html>
