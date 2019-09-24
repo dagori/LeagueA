@@ -17,26 +17,21 @@ const sourcemaps = require('gulp-sourcemaps');
 const config = {
   shape: {
     dimension: { // Set maximum dimensions
-      maxWidth: 26,
-      maxHeight: 26
+      maxWidth: 37,
+      maxHeight: 37
     },
     spacing: { // Add padding
       padding: 5
     }
   },
   mode: {
-    view: { // Activate the «view» mode
-      bust: false,
-      render: {
-        scss: true // Activate Sass output (with default options)
-      }
-    },
-    symbol: false // Activate the «symbol» mode
+    view: false,
+    symbol: true // Activate the «symbol» mode
   }
 };
 
 function sprites() {
-  return src('images-dev/*.svg')
+  return src('images/icon-*.svg')
     .pipe(svgSprite(config))
     .pipe(dest('build/images'));
 }

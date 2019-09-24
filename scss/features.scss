@@ -9,10 +9,12 @@
   border-left: 2px solid $color-active;
   margin-bottom: 20px;
   padding: 25px;
+  cursor: pointer;
 }
 
 .features__img {
   margin-bottom: 20px;
+  pointer-events: none;
 }
 
 .features__title {
@@ -25,4 +27,14 @@
 
 .features__text {
   @include text-description-style;
+}
+
+.features__item:hover {
+  background: $color-active;
+  .features__img {
+    fill: $color-text-light;
+  }
+  .features__title, .features__text {
+    color: $color-text-light;
+  }
 }
