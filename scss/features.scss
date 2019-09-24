@@ -38,3 +38,24 @@
     color: $color-text-light;
   }
 }
+
+@media #{$tablet-width} {
+  .features {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    width: calc(50% - 31px);
+    flex-grow: 2;
+  }
+
+  .features__title {
+    font-size: 24px;
+  }
+
+  .features__item:nth-child(odd):not(:last-child) {
+    margin-right: 30px;
+  }
+}

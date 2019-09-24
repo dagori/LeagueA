@@ -10,18 +10,22 @@
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  outline: 1px solid red;
 }
 
 .header__logo {
   width: 50%;
-//  background: orange;
+  flex-grow: 2;
 }
 
 .header__container-menu {
-  width: 50%;
   display: flex;
   justify-content: space-between;
-//  background: lightblue;
+}
+
+@media #{$tablet-width} {
+  .header__container {
+    width: 770px;
+  }
 }

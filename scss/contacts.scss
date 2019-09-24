@@ -1,8 +1,10 @@
 .contacts {
   display: flex;
   justify-content: space-between;
-  width: 75px;
-//  background: lightgreen;
+}
+
+.contacts > a:not(:last-child) {
+  margin-right: 25px;
 }
 
 .contacts__text {

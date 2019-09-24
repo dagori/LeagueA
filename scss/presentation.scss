@@ -54,11 +54,43 @@
   @include button-style;
   font-size: 16px;
   color: $color-text-light;
-  width: 290px;
   height: 55px;
   background-color: $color-active;
 }
 
 .presentation__scroll {
   display: none;
+}
+
+@media #{$tablet-width} {
+  .presentation__wrapper {
+    padding: 190px 0 150px;
+    background-position: calc(50% + 350px) 90px;
+    background-size: 500px;
+  }
+
+  .presentation__container {
+    width: 620px;
+  }
+
+  .presentation__title {
+    width: 315px;
+    font-size: 60px;
+  }
+
+  .presentation__description {
+    width: 356px;
+    font-size: 18px;
+  }
+
+  .presentation__consultation {
+    &-mobile {
+      display: none;
+    }
+    &-tablet {
+      display: inline;
+    }
+    @include button-style;
+    font-size: 16px;
+  }
 }
