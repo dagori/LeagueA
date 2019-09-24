@@ -1,0 +1,23 @@
+.features {
+  width: 290px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+
+.features__item {
+  border: 1px solid $color-stroke;
+  border-left: 2px solid $color-active;
+  margin-bottom: 20px;
+  padding: 25px;
+}
+
+.features__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: $color-active;
+}
+
+.features__text {
+  @include text-description-style;
+}

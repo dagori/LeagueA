@@ -1,5 +1,26 @@
 @mixin button-style {
+  display: block;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
   border-radius: 5px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin text-description-style {
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+  line-height: 134.4%;
+  color: $color-text-dark;
+}
+
+@mixin pseudo-checkbox {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0px;
+  left: -32.24px;
+  background: none;
+  border: 1px solid currentColor;
 }

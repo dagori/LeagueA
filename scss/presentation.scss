@@ -1,0 +1,61 @@
+.presentation {
+  background-color: $color-dark-background;
+  background-image: url('/images/present-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 647px; // убрать потом.
+}
+
+.presentation__wrapper {
+  width: 100vw; //???????????????????
+  padding-top: 285px;
+  margin: 0 auto;
+  background-image: url('/images/circuitboard-point-min.png');
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
+
+.presentation__container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.presentation__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: $color-text-light;
+  letter-spacing: 7%;
+}
+
+.presentation__description {
+  font-family: 'PT Mono', monospace;
+  font-size: 16px;
+  line-height: 156.8%;
+  color: $color-text-light;
+  position: relative;
+}
+
+.presentation__description::before {
+  position: absolute;
+  content: '';
+  width: 33px;
+  height: 2px;
+  top: 10px;
+  left: calc(-16px - 33px);
+  background: $color-text-light
+}
+
+.presentation__consultation {
+  &-tablet {
+    display: none;
+  }
+  @include button-style;
+  font-size: 16px;
+  color: $color-text-light;
+  width: 290px;
+  height: 55px;
+  line-height: 55px;
+  background-color: $color-active;
+}

@@ -1,0 +1,30 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  background: lightgreen;
+}
+
+.contacts__text {
+  display: none;
+}
+
+.contacts__reguest-call {
+  display: none;
+}
+
+.contacts__image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &--email {
+    width: 25.33px;
+    height: 18.70px;
+    background-image: url('/images/envelope.svg');
+  }
+  &--tel {
+    width: 24px;
+    height: 24px;
+    background-image: url('/images/phone.svg');
+  }
+}

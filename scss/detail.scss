@@ -1,0 +1,33 @@
+.detail {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.detail__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.6%;
+  color: $color-text-dark;
+}
+
+.detail__description {
+  @include text-description-style;
+  margin: 25px 0 35px;
+}
+
+.detail-description-desktop-content {
+  display: none;
+}
+
+.detail__image {
+  display: none;
+}
+
+.detail__more-detail {
+  @include button-style;
+  border: 1px solid currentColor;
+  color: $color-active;
+  width: 180px;
+  height: 45px;
+}
