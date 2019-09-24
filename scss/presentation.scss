@@ -3,11 +3,10 @@
   background-image: url('/images/present-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 647px; // убрать потом.
 }
 
 .presentation__wrapper {
-  padding-top: 265px;
+  padding: 265px 0 65px;
   margin: 0 auto;
   background-image: url('/images/circuitboard-point-min.png');
   background-repeat: no-repeat;
@@ -32,6 +31,7 @@
 .presentation__description {
   font-family: 'PT Mono', monospace;
   font-size: 16px;
+  line-height: 156.8%;
   color: $color-text-light;
   position: relative;
   margin: 35px 0 35px 47px;
