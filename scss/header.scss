@@ -15,7 +15,6 @@
 }
 
 .header__logo {
-  width: 50%;
   flex-grow: 2;
 }
 
@@ -27,5 +26,15 @@
 @media #{$tablet-width} {
   .header__container {
     width: 770px;
+  }
+}
+
+@media #{$desktop-width} {
+  .header__container {
+    width: 1411px;
+  }
+
+  .header__container-menu {
+    width: 1070px;
   }
 }

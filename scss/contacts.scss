@@ -5,13 +5,21 @@
 
 .contacts > a:not(:last-child) {
   margin-right: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts__text {
+  @include placeholder-text-style;
   display: none;
 }
 
 .contacts__reguest-call {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-text-light;
+  text-transform: uppercase;
   display: none;
 }
 
@@ -28,5 +36,31 @@
     width: 25px;
     height: 25px;
     background-image: url('/images/phone.svg');
+  }
+}
+
+@media #{$desktop-width} {
+  .contacts > a:nth-child(even):not(:last-child) {
+    margin: 0 75px 0 85px;
+  }
+
+  .contacts__image {
+    margin-right: 20px;
+    &--email {
+      width: 23px;
+      height: 17px;
+    }
+    &--tel {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .contacts__text {
+    display: block;
+  }
+
+  .contacts__reguest-call {
+    display: block;
   }
 }

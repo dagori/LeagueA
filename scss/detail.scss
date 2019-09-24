@@ -65,3 +65,29 @@
     }
   }
 }
+
+@media #{$desktop-width} {
+  .detail {
+    width: 1170px;
+  }
+
+  .detail__image {
+    margin-left: -35px;
+    height: 317px;
+  }
+
+  .detail__description {
+    margin: 15px 0 45px;
+    p:nth-child(odd) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .detail-description-dots {
+    display: none;
+  }
+
+  .detail-description-desktop-content {
+    display: inline;
+  }
+}

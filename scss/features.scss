@@ -59,3 +59,12 @@
     margin-right: 30px;
   }
 }
+
+@media #{$desktop-width} {
+  .features {
+    width: 1170px;
+  }
+  .features__item {
+    padding: 40px 45px 70px;
+  }
+}

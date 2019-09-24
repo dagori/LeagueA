@@ -1,21 +1,6 @@
-@mixin placeholder-text-style {
-  font-family: 'PT Mono', monospace;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 134.4%;
-  color: $color-text-light;
-}
-
-@mixin form-content-style {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 14.51px 24.13px;
-}
-
 .popup {
-//  max-width: 490px;
-//  min-width: 100%;
   display: none;
-  width: 490px;
+  width: 270px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -97,5 +82,11 @@
     height: 16px;
     top: -2px;
     left: -30.24px;
+  }
+}
+
+@media #{$tablet-width} {
+  .popup {
+    width: 490px;
   }
 }
