@@ -30,6 +30,7 @@
   @include form-content-style;
   @include placeholder-text-style;
   max-width: 100%;
+  min-height: 104px;
 }
 
 .send-contacts__submit {
