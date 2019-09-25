@@ -30,6 +30,8 @@
   @include form-content-style;
   @include placeholder-text-style;
   max-width: 100%;
+  min-width: 100%;
+  width: 100%;
   min-height: 104px;
 }
 
@@ -63,4 +65,8 @@
     top: -2px;
     left: -30.24px;
   }
+}
+
+::-moz-placeholder, :-moz-placeholder {
+    opacity: 1;
 }
