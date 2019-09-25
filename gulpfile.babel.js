@@ -66,6 +66,11 @@ function scripts() {
   .pipe(browserSync.stream())
 }
 
+function polyfill() {
+  return src('polyfill/*')
+  .pipe(dest('build/polyfill'))
+}
+
 function serve() {
   browserSync.init({
     server: {
@@ -109,4 +114,4 @@ exports.js = scripts;
 exports.img = images;
 exports.clean = clean;
 exports.sprites = sprites;
-exports.default = series(clean, images, parallel(font, styles, scripts, serve));
+exports.default = series(clean, images, parallel(polyfill, font, styles, scripts, serve));

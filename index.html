@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Mono|Roboto+Condensed:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="build/css/style.min.css" rel="preload" as="style">
     <link href="build/css/style.min.css" rel="stylesheet" type="text/css">
+    <script src="build/polyfill/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <header class="header">
@@ -36,7 +38,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="presentation">
         <div class="presentation__wrapper">
           <div class="presentation__container">
@@ -50,7 +52,8 @@
           </div>
         </div>
       </section>
-      <div class="features">
+      <div class="main__wrapper">
+        <div class="features">
         <article class="features__item">
           <svg class="features__img" viewBox="0 0 30 36"  width="30" height="36" fill="#00B2FF">
             <use xlink:href="images/sprite.symbol.svg#icon-stopwatch"></use>
@@ -80,7 +83,7 @@
           <p class="features__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
         </article>
       </div>
-      <section class="detail">
+        <section class="detail">
         <img class="detail__image" src="build/images/2005.png" alt="2005" width="251" height="361">
         <div class="detail__container">
           <h2 class="detail__title">О компании</h2>
@@ -91,6 +94,7 @@
           <button class="detail__more-detail btn" type="button">Подробнее</button>
         </div>
       </section>
+      </div>
     </main>
     <div class="overlay"></div>
     <div class="popup">
@@ -104,7 +108,7 @@
         <input class="send-contacts__consent" id="personal-data" type="checkbox" name="personal-data" checked aria-label="Согласие на обработку персональных данных. Установлено по умолчанию">
         <label for="personal-data">Я согласен на обработку  персональных данных</label>
       </form>
-      <button class="popup__button" type="button" aria-label="Закрыть форму обратной связи">🞨</button>
+      <button class="popup__button" type="button" aria-label="Закрыть форму обратной связи">✖</button>
     </div>
     <script src="build/js/script.min.js"></script>
   </body>
