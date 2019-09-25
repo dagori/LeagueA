@@ -1,6 +1,6 @@
 .presentation {
   background-color: $color-dark-background;
-  background-image: url('/images/present-bg.jpg');
+  background-image: url('../images/present-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -8,7 +8,7 @@
 .presentation__wrapper {
   padding: 265px 0 65px;
   margin: 0 auto;
-  background-image: url('/images/circuitboard-point-min.png');
+  background-image: url('../images/circuitboard-point-min.png');
   background-repeat: no-repeat;
   background-position: calc(50% + 20px) 80px;
   background-size: 290px;
