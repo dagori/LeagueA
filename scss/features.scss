@@ -40,6 +40,13 @@
   }
 }
 
+@media (min-width: 340px) and (max-width: 769px) {
+  .features {
+    width: 100%;
+    padding: 35px 30px;
+  }
+}
+
 @media #{$tablet-width} {
   .features {
     width: 720px;

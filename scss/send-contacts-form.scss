@@ -1,0 +1,65 @@
+.send-contacts {
+  display: flex;
+  flex-direction: column;
+  color: $color-text-light;
+  & > * {
+    margin-bottom: 30px;
+  }
+}
+
+.send-contacts__title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140.6%;
+  p {
+    @include text-description-style;
+    color: $color-text-light;
+  }
+}
+
+.send-contacts input {
+  @include form-content-style;
+  height: 52px;
+  &::placeholder {
+    @include placeholder-text-style;
+  }
+}
+
+.send-contacts textarea {
+  @include form-content-style;
+  @include placeholder-text-style;
+  max-width: 100%;
+}
+
+.send-contacts__submit {
+  @include button-style;
+  font-size: 14px;
+  color: $color-text-light;
+  border: 1px solid currentColor;
+  height: 47px;
+}
+
+.send-contacts__consent {
+  display: none;
+}
+
+.send-contacts__consent + label {
+  position: relative;
+  margin-left: 33px;
+  &::before {
+    @include pseudo-checkbox;
+  }
+}
+
+.send-contacts__consent:checked + label {
+  &::after {
+    content: '✔';
+    color: $color-text-light;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -2px;
+    left: -30.24px;
+  }
+}

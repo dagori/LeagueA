@@ -8,7 +8,6 @@
 .header__container {
   width: 290px;
   margin: 0 auto;
-  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +20,13 @@
 .header__container-menu {
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 340px) and (max-width: 769px) {
+  .header__container {
+    width: 100%;
+    padding: 0 30px;
+  }
 }
 
 @media #{$tablet-width} {
